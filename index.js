@@ -26,8 +26,8 @@ function updateData(updateMessage) {
             fs.unlinkSync(dataPath);
         }
         fs.writeFileSync(dataPath, JSON.stringify(response));
-		if (updateMessage)
-			console.log("資料已經更新!");
+        if (updateMessage)
+            console.log("資料已經更新!");
     }).catch((err) => {
         console.log('API call error:', err.message);
     });
@@ -36,7 +36,7 @@ function updateData(updateMessage) {
 function firstCheckFileExist() {
     if (!fs.existsSync(dataPath)) {
         updateData();
-		console.log(`資料已經建立到${dataPath}!`);
+        console.log(`資料已經建立到${dataPath}!`);
     }
 }
 
