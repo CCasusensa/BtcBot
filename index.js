@@ -5,7 +5,7 @@ const fs = require('fs');
 const rp = require('request-promise');
 const dataPath = 'D:/xampp/htdocs/data.json';
 const updateTime = 30 * 60 * 1000; // 30 分鐘更新
-const apiKey = 'ce5390e7-cc29-4ddf-b359-7b515e61bd19'; // 到https://pro.coinmarketcap.com/ 申請API Key
+const apiKey = ''; // 到https://pro.coinmarketcap.com/ 申請API Key
 const requestOptions = {
     method: 'GET',
     uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',
